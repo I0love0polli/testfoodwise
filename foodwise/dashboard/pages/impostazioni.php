@@ -1834,7 +1834,7 @@ $showRestaurantSettings =
         } else {
             // Fallback nel caso l'istanza del modale non sia pronta
             if (confirm('Sei sicuro di voler effettuare il logout? (Fallback)')) {
-                window.location.href = '/foodwise/logout/index.php';
+                window.location.href = '/logout/index.php';
             }
         }
     }
@@ -1849,7 +1849,7 @@ $showRestaurantSettings =
         const confirmLogoutBtn = document.getElementById('confirmLogoutBtn');
         if (confirmLogoutBtn) {
             confirmLogoutBtn.addEventListener('click', function() {
-                window.location.href = '/foodwise/logout/index.php';
+                window.location.href = '/logout/index.php';
             });
         }
         
@@ -1886,7 +1886,7 @@ $showRestaurantSettings =
             restaurantForm.addEventListener('submit', function(event) {
                 event.preventDefault();
                 const formData = new FormData(this);
-                fetch('/foodwise/database/impostazioni/set_ristorante.php', {
+                fetch('/database/impostazioni/set_ristorante.php', {
                     method: 'POST',
                     body: formData
                 })
@@ -1934,7 +1934,7 @@ $showRestaurantSettings =
             wifiForm.addEventListener('submit', function(event) {
                 event.preventDefault();
                 const formData = new FormData(this);
-                fetch('/foodwise/database/impostazioni/set_ristorante.php', { // Assicurati che l'endpoint sia corretto
+                fetch('/database/impostazioni/set_ristorante.php', { // Assicurati che l'endpoint sia corretto
                     method: 'POST',
                     body: formData
                 })
