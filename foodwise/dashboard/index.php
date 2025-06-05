@@ -64,7 +64,7 @@ if (isset($_POST['collapse_sidebar'])) {
 $title = "Gestione Staff"; // Imposta il titolo della pagina
 $conn = connessione(); // Connessione al database PostgreSQL
 
-// Query per ottenere i dati dello staff dal database
+// Query per ottenere i dati dello staff dal databased
 $query = "SELECT username, full_name, email, hired, telefono, ruolo 
           FROM personale";
 $result = pg_query($conn, $query);
