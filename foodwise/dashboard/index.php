@@ -123,7 +123,7 @@ $profileInitials = getInitials($profileName);
                     
                     <?php if (canViewPage($userRole, 'home', $permissions)): ?>
                     <li class="nav-item">
-                        <a href="/foodwise/dashboard/home" class="nav-link <?php echo $page === 'home' ? 'active' : ''; ?>">
+                        <a href="/dashboard/home" class="nav-link <?php echo $page === 'home' ? 'active' : ''; ?>">
                             <i data-lucide="home" class="nav-icon"></i>
                             <span class="nav-text">Home</span>
                         </a>
@@ -132,7 +132,7 @@ $profileInitials = getInitials($profileName);
 
                     <?php if (canViewPage($userRole, 'analitiche', $permissions)): ?>
                     <li class="nav-item">
-                        <a href="/foodwise/dashboard/analitiche" class="nav-link <?php echo $page === 'analitiche' ? 'active' : ''; ?>">
+                        <a href="/dashboard/analitiche" class="nav-link <?php echo $page === 'analitiche' ? 'active' : ''; ?>">
                             <i data-lucide="bar-chart-3" class="nav-icon"></i>
                             <span class="nav-text">Analitiche</span>
                         </a>
@@ -141,7 +141,7 @@ $profileInitials = getInitials($profileName);
 
                     <?php if (canViewPage($userRole, 'menu', $permissions)): ?>
                     <li class="nav-item">
-                        <a href="/foodwise/dashboard/menu" class="nav-link <?php echo $page === 'menu' ? 'active' : ''; ?>">
+                        <a href="/dashboard/menu" class="nav-link <?php echo $page === 'menu' ? 'active' : ''; ?>">
                             <i data-lucide="utensils-crossed" class="nav-icon"></i>
                             <span class="nav-text">Menù</span>
                         </a>
@@ -150,7 +150,7 @@ $profileInitials = getInitials($profileName);
 
                     <?php if (canViewPage($userRole, 'tavoli', $permissions)): ?>
                     <li class="nav-item">
-                        <a href="/foodwise/dashboard/tavoli" class="nav-link <?php echo $page === 'tavoli' ? 'active' : ''; ?>">
+                        <a href="/dashboard/tavoli" class="nav-link <?php echo $page === 'tavoli' ? 'active' : ''; ?>">
                             <i data-lucide="layout-dashboard" class="nav-icon"></i>
                             <span class="nav-text">Tavoli</span>
                         </a>
@@ -159,7 +159,7 @@ $profileInitials = getInitials($profileName);
 
                     <?php if (canViewPage($userRole, 'ordini', $permissions)): ?>
                     <li class="nav-item">
-                        <a href="/foodwise/dashboard/ordini" class="nav-link <?php echo $page === 'ordini' ? 'active' : ''; ?>">
+                        <a href="/dashboard/ordini" class="nav-link <?php echo $page === 'ordini' ? 'active' : ''; ?>">
                             <i data-lucide="clipboard-list" class="nav-icon"></i>
                             <span class="nav-text">Ordini</span>
                         </a>
@@ -168,7 +168,7 @@ $profileInitials = getInitials($profileName);
 
                     <?php if (canViewPage($userRole, 'pagamenti', $permissions)): ?>
                     <li class="nav-item">
-                        <a href="/foodwise/dashboard/pagamenti" class="nav-link <?php echo $page === 'pagamenti' ? 'active' : ''; ?>">
+                        <a href="/dashboard/pagamenti" class="nav-link <?php echo $page === 'pagamenti' ? 'active' : ''; ?>">
                             <i data-lucide="credit-card" class="nav-icon"></i>
                             <span class="nav-text">Pagamenti</span>
                         </a>
@@ -177,7 +177,7 @@ $profileInitials = getInitials($profileName);
 
                     <?php if (canViewPage($userRole, 'personale', $permissions)): ?>
                     <li class="nav-item">
-                        <a href="/foodwise/dashboard/personale" class="nav-link <?php echo $page === 'personale' ? 'active' : ''; ?>">
+                        <a href="/dashboard/personale" class="nav-link <?php echo $page === 'personale' ? 'active' : ''; ?>">
                             <i data-lucide="users" class="nav-icon"></i>
                             <span class="nav-text">Personale</span>
                         </a>
@@ -186,7 +186,7 @@ $profileInitials = getInitials($profileName);
                     
                     <?php if (canViewPage($userRole, 'impostazioni', $permissions)): ?>
                     <li class="nav-item">
-                        <a href="/foodwise/dashboard/impostazioni" class="nav-link <?php echo $page === 'impostazioni' ? 'active' : ''; ?>">
+                        <a href="/dashboard/impostazioni" class="nav-link <?php echo $page === 'impostazioni' ? 'active' : ''; ?>">
                             <i data-lucide="settings" class="nav-icon"></i>
                             <span class="nav-text">Impostazioni</span>
                         </a>
